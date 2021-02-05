@@ -5,8 +5,9 @@ scalaVersion := "2.12.13"
 val flinkVersion = "1.12.1"
 
 libraryDependencies ++= Seq(
-  "org.apache.flink" %% "flink-scala" % flinkVersion % Provided,
-  "org.apache.flink" %% "flink-streaming-scala" % flinkVersion % Provided
+  "org.apache.flink" %% "flink-scala" % flinkVersion %,
+  "org.apache.flink" %% "flink-streaming-scala" % flinkVersion %,
+  "org.apache.flink" %% "flink-clients" % flinkVersion
 )
 
 assemblyMergeStrategy in assembly := {
